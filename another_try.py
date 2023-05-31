@@ -6,12 +6,10 @@ url = f"https://airlabs.co/api/v9/routes?api_key={api_key}"
 
 # Effectuer une requête GET à l'API
 response = requests.get(url)
-
 # Vérifier si la requête a réussi (code de statut 200)
 if response.status_code == 200:
     # Récupérer les données de la réponse en format JSON
     data = response.json()
-
     # Définir les noms des champs pour le fichier CSV
     fieldnames = [
         "airline_iata",
@@ -37,7 +35,6 @@ if response.status_code == 200:
         "aircraft_icao",
         "updated"
     ]
-
     # Ouvrir le fichier CSV en mode écriture
     with open("routes.csv", mode="w", newline="") as file:
         # Créer un objet writer pour écrire dans le fichier CSV
@@ -45,6 +42,7 @@ if response.status_code == 200:
         # Écrire les en-têtes dans le fichier CSV
         writer.writeheader()
         # Écrire chaque ligne de données dans le fichier CSV
+        print("HOY FUNCTION")
         for route in data:
             writer.writerow(route)
 

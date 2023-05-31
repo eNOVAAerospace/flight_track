@@ -1,1 +1,0 @@
-airline_iata,airline_icao,flight_number,flight_iata,flight_icao,cs_airline_iata,cs_flight_iata,cs_flight_number,dep_iata,dep_icao,dep_time,dep_time_utc,dep_terminals,arr_iata,arr_icao,arr_time,arr_time_utc,arr_terminals,duration,days,aircraft_icao,updated

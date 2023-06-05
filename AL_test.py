@@ -2,8 +2,8 @@ import requests
 import json
 
 api_key = 'c78bbb29-56b2-4347-9d89-fd3e72238896'
-url = f"https://airlabs.co/api/v9/flights?lat=47.6174&lon=-52.7272&distance=100&api_key={api_key}"
-
+url = f"https://airlabs.co/api/v9/flights?lat=53.640137&lon=-67.665252&distance=100&api_key={api_key}"
+# 53.640137, -67.665252
 # Effectuer une requête GET à l'API
 response = requests.get(url)
 

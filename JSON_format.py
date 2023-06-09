@@ -13,7 +13,6 @@ def format_json(file_in, file_out):
     print(f"Le fichier JSON a été formaté avec succès. Le résultat a été enregistré dans '{file_out}'.")
 
 
-file_in = 'al_test.json'  # Fichier JSON d'entrée
-file_out = 'al_test_format.json'  # Fichier JSON formaté en sortie
+file = 'i.json'
 
-format_json(file_in, file_out)
+format_json(file, file)

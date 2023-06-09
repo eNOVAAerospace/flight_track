@@ -14,3 +14,4 @@ def json_to_csv(file_in, file_out):
     with open(file_out, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(parameters)
+    print(f'Data converted in {file_out}')

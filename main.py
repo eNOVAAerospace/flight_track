@@ -1,6 +1,6 @@
-from flight_scrapper import *
-from format_json import *
-from json_to_csv import *
+from library.flight_scrapper import *
+from library.format_json import *
+from library.json_to_csv import *
 from datetime import datetime
 
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")

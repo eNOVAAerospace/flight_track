@@ -8,18 +8,21 @@ data = read_csv(filename)
 n = 0
 new_filename = 'sorted_' + filename
 
-with open(new_filename, 'w') as file :
-    pass
+with open(new_filename, 'w', newline='') as file:
+    writer = csv.writer(file)
+    param_names = list(data[0].keys())
+    writer.writerow(param_names)
 
-print('calcul du nombre d\'avions dans une zone précise.')
-for row in data:
-    lat = row['lat']
-    lng = row['lng']
-    if float(latitudes[0]) <= float(lat) <= float(latitudes[1]) \
-            or float(latitudes[0]) >= float(lat) >= float(latitudes[1]):
-        n = n + 1
-        print(f'plane number #{n}\tLat: {lat}\tLng: {lng}')
-    # pas opti: print(f'#{n}\tLat:\t', row['lat'], '\tLng:\t', row['lng'])
+    print('calcul du nombre d\'avions dans une zone précise.')
+    for row in data:
+        lat = row['lat']
+        lng = row['lng']
+        if float(latitudes[0]) <= float(lat) <= float(latitudes[1]) and float(longitudes[0]) <= float(lng) <= float(
+                longitudes[1]) or float(latitudes[0]) >= float(lat) >= float(latitudes[1]) and float(longitudes[0]) >= \
+                float(lng) >= float(longitudes[1]):
+            n = n + 1
+            row_values = list(row.values())
+            writer.writerow(row_values)
 
-print(latitudes)
-print(longitudes)
+            print(f'plane number #{n}\tLat: {lat}\tLng: {lng}')
+print(f'Tout a été enregistré dans le fichier : {new_filename}')

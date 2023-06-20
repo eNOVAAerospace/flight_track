@@ -24,7 +24,9 @@ Now, we'll open a command prompt, and move in the current directory:
 
 Now that we are in the correct directory, we will execute the following command:
 > **python main.py**
-![img_2.png](library/readme/img_2.png)
+
+Once you have entered the command, you will see a prompt asking you to type 0 or 1 to automate the data retrieving of
+retrieving data only once. Chose the one you want.
 
 This command applies itself in Windows, Linux, and Mac.
 Once you executed this command, you will have to wait shortly to see two new files in your directory:

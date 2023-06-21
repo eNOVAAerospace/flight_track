@@ -25,16 +25,18 @@ Now, we'll open a command prompt, and move in the current directory:
 Now that we are in the correct directory, we will execute the following command:
 > **python main.py**
 
+![img.png](library/readme/rftfbh.png)
+
 Once you have entered the command, you will see a prompt asking you to type 0 or 1 to automate the data retrieving of
-retrieving data only once. Chose the one you want.
+retrieving data only once. Chose the one you want. We will choose the choice '1' for no.
 
 This command applies itself in Windows, Linux, and Mac.
-Once you executed this command, you will have to wait shortly to see two new files in your directory:
+Once you executed this command, you will have to wait shortly to see new files in your directory:
 
-![img_3.png](library/readme/img_3.png)
+![img_1.png](library/readme/zefvh.png)
 
-Those are the two files. One of them is a JSON file, it won't interest us, so we can remove it if we want to. The file
-with the 'tab-' prefixe is the one that interest us and has the data with the correct format for usage.
+Those are the new files. One of them is a JSON file, it won't interest us, so we can remove it if we want to. The file
+with the 'excel_' prefixe is the one that interest us and has the data with the correct format for usage.
 
 ------------
 

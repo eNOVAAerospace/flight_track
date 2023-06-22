@@ -1,5 +1,7 @@
 # flight_track
 
+> Project realized by Antoine Rovini, student at Epitech Technology, Promo 2025.
+
 In this program, Airlabs's API is used to retrieve flight data around the globe. Here is a tutorial to help you to use
 it.
 

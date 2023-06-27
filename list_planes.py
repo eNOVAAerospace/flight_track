@@ -38,10 +38,8 @@ for index, row in df.iterrows():
             longitudes[1]) or float(latitudes[0]) >= float(lat) >= float(latitudes[1]) and float(longitudes[0]) >= \
             float(lng) >= float(longitudes[1]):
         n += 1
-        print(f'plane number #{n}\tLat: {lat}\tLng: {lng}')
     else:
         df.drop(index, inplace=True)
-
 df.to_excel(writer, index=False)
 writer.save()
 

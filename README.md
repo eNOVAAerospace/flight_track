@@ -53,6 +53,7 @@ touched, modified, or moved.
 You will have to keep this configuration so the program can work. Now, we'll take the exact same command prompt, and
 type in the following command:
 > **python list_planes.py**
+> 
 > ![img.png](library/readme/edfghbvc.png)
 
 It will ask you to provide the file name that was created. Here, the name of our file is
@@ -65,6 +66,7 @@ Let's continue by entering the name of the file.
 ![img_1.png](library/readme/edcvghbv.png)
 
 After pressing enter, you will have the following display : 
+
 ![img_2.png](library/readme/azdfvb.png)
 
 on this display we see in the pormpt 'plane number #1 Lat: 49.98      Lng: 62.86'. This is subject to be removed in the

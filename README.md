@@ -78,6 +78,6 @@ You will see it in your file explorer.
 For notice, the 'coordinates.txt' file is read by the program to filter the requested zone using 4 point, two lat and
 two lng point, as shown in the file:
 
-![img_1.png](library/readme/azertd.png)
+![img.png](library/readme/asdvbn.png)
 
 It is mandatory to keep the same format as it won't be functional otherwise.

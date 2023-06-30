@@ -10,6 +10,12 @@ We have two programs that aren't merged, so we will do use them separately.
 Bear in mind that this program isn't automated yet, so you will have to do it manually, and that the usage of this
 program is limite to 1000 use per month.
 
+> dependencies to install:
+> 
+>- pandas
+>- xlsxwriter
+>- xlwt
+
 -------------
 
 ## How to : use the program 'main.py'

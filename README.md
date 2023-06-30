@@ -15,6 +15,8 @@ program is limite to 1000 use per month.
 >- pandas
 >- xlsxwriter
 >- xlwt
+>- xlrd
+>- xls
 
 -------------
 

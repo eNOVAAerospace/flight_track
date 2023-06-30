@@ -54,7 +54,7 @@ You will have to keep this configuration so the program can work. Now, we'll tak
 type in the following command:
 > **python list_planes.py**
 > 
-> ![img.png](library/readme/edfghbvc.png)
+> ![img.png](library/readme/ascvbhg.png)
 
 It will ask you to provide the file name that was created. Here, the name of our file is
 'tab_2023-06-09_17_02_48_flight.csv'. The naming is quite simple : 'tab' is meant for the CSV version of the file, the
@@ -62,12 +62,9 @@ numbers have the format YYYY-MM-DD_HH_MM_SS (Year, Month, Day, Hour, Minute, Sec
 So actually our current file is : tab_2023-06-15_15-59-12_flight.csv
 
 Let's continue by entering the name of the file.
-
-![img_1.png](library/readme/edcvghbv.png)
-
 After pressing enter, you will have the following display : 
 
-![img_2.png](library/readme/azdfvb.png)
+![img_1.png](library/readme/aqwxcvbn,.png)
 
 on this display we see in the pormpt 'plane number #1 Lat: 49.98      Lng: 62.86'. This is subject to be removed in the
 long run, but it attests that data has been written. The data will be written in the filename with the 'sorted_' prefix.

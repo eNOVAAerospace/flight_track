@@ -1,7 +1,7 @@
 from library.reading_file import *
 from library.coordinates import *
 from library.read_excel import *
-
+from library.calculate_distance import *
 
 # filename = input('Entrez le nom du fichier CSV entier (incluant l\'extension du fichier): ')
 # coord_path = 'coordinates.txt'
@@ -24,23 +24,21 @@ from library.read_excel import *
 filename = input('Entrez le nom du fichier XLS entier (incluant l\'extension du fichier): ')
 coord_path = 'coordinates.txt'
 latitudes, longitudes = read_coordinates(coord_path)
-data = read_excel(filename)
-n = 0
+data = pd.read_excel(filename)
+data = pd.DataFrame(data)
 new_filename = 'sorted_' + filename
 
-writer = pd.ExcelWriter(new_filename, engine='xlsxwriter')
-df = pd.DataFrame(data)
-
-for index, row in df.iterrows():
+filtered_data = []
+for index, row in data.iterrows():
     lat = row['lat']
     lng = row['lng']
-    if float(latitudes[0]) <= float(lat) <= float(latitudes[1]) and float(longitudes[0]) <= float(lng) <= float(
-            longitudes[1]) or float(latitudes[0]) >= float(lat) >= float(latitudes[1]) and float(longitudes[0]) >= \
-            float(lng) >= float(longitudes[1]):
-        n += 1
-    else:
-        df.drop(index, inplace=True)
-df.to_excel(writer, index=False)
-writer.save()
+    for ref_lat, ref_lng in zip(latitudes, longitudes):
+        distance = calculate_distance(lat, lng, float(ref_lat), float(ref_lng))
+        if distance <= 100:  # Filtrer les avions dans un rayon de 100 km
+            filtered_data.append(row)
+            break
 
-print(f'Tout a été enregistré dans le fichier : {new_filename}')
+filtered_df = pd.DataFrame(filtered_data)
+filtered_df.to_excel(new_filename, index=False)
+
+print(f"Tout a été enregistré dans le fichier : {new_filename}")

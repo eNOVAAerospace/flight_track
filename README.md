@@ -17,6 +17,7 @@ program is limite to 1000 use per month.
 >- xlwt
 >- xlrd
 >- xls
+>- openpyxl
 
 -------------
 

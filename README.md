@@ -39,15 +39,22 @@ Now that we are in the correct directory, we will execute the following command:
 ![img.png](library/readme/rftfbh.png)
 
 Once you have entered the command, you will see a prompt asking you to type 0 or 1 to automate the data retrieving of
-retrieving data only once. Chose the one you want. We will choose the choice '1' for no.
+retrieving data only once. Chose the one you want. We will choose the choice '0' for the example.
+
+![img.png](library/readme/asdfgujnbvc.png)
+
+Here we had the choice to put any number of request we wanted it to make, so we selected 2 requests.
+Same goes for the time between each request, it asks in seconds the time you want it to wait before eache one. Here we
+typed 2 as well, for 2 Seconds.
 
 This command applies itself in Windows, Linux, and Mac.
 Once you executed this command, you will have to wait shortly to see new files in your directory:
 
 ![img_1.png](library/readme/zefvh.png)
 
-Those are the new files. One of them is a JSON file, it won't interest us, so we can remove it if we want to. The file
-with the 'excel_' prefixe is the one that interest us and has the data with the correct format for usage.
+Those are the new files. One of them is a JSON file and the other CSV, it won't interest us, so we can remove it if we
+want to. The file with the 'excel_' prefixe is the one that interest us and has the data with the correct format for
+usage. Note that if you chose to make multiple requests, there will be multiple files.
 
 ------------
 

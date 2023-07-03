@@ -6,7 +6,7 @@ from datetime import datetime
 from time import sleep
 
 
-def get_data(n):
+def get_data(n, request_left, attente):
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     namefile = f'{current_time}_flight'
     json_file = f'{namefile}.json'
@@ -23,7 +23,8 @@ def get_data(n):
     json_to_csv(json_file, csv_file)
     json_to_excel(json_file, excel_file)
     print("all operations done")
-    if n == 0:
-        print('waiting an hour to proceed further.')
-        sleep(3600)
-        get_data(n)
+    if n == 0 and request_left > 0:
+        print(f'waiting {attente} seconds to proceed further, {request_left} request(s) left.')
+        request_left = request_left - 1
+        sleep(attente)
+        get_data(n, request_left, attente)

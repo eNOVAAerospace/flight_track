@@ -1,6 +1,6 @@
 def get_user_choice():
     while True:
-        print('Voulez-vous automatiser la récupération de données ? Les requêtes seront faites toutes les heures.')
+        print('Voulez-vous automatiser la récupération de données ?')
         print('Oui : 0')
         print('Non : 1')
         see = input('Votre choix : ')

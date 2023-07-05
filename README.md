@@ -15,7 +15,7 @@ program is limite to 1000 use per month.
 
 -------------
 
-## How to : use the program 'main.py'
+## How to : use the program 'wrap_planes.exe'
 
 On the dump, you will see a file and a folder. the program is contained in the main.py file and the library in the
 folder, so don't delete or modify anything. you will have to keep this configuration so the program can work.

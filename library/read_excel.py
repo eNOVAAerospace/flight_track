@@ -1,5 +1,4 @@
 import pandas as pd
-import xlsxwriter
 
 
 def read_excel(file_path):

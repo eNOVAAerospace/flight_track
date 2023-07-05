@@ -26,7 +26,7 @@ coord_path = 'coordinates.txt'
 latitudes, longitudes = read_coordinates(coord_path)
 data = pd.read_excel(filename)
 data = pd.DataFrame(data)
-new_filename = 'sorted_' + filename
+new_filename = 'sorted_' + filename + 'x'
 
 filtered_data = []
 for index, row in data.iterrows():

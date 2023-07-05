@@ -20,7 +20,7 @@ def get_data(n, request_left, attente):
         pass
     scrap_plane(json_file)
     format_json(json_file, json_file)
-    # json_to_csv(json_file, csv_file)
+    json_to_csv(json_file, csv_file)
     json_to_excel(json_file, excel_file)
     print("all operations done")
     if n == 0 and request_left > 0:

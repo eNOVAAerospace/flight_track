@@ -17,17 +17,30 @@ def get_user_choice():
         if see == '0' and '0' < nb_requests and time_request > '0':
             return int(see), int(nb_requests), int(time_request)
         else:
-            print('Choix invalide. Veuillez entrer 0 ou 1.')
+            print('Choix invalide.')
 
 
 def user_preferences():
     valid = 0
+    zone_size = 0
     while True:
+        valid = 0
         filename = input('Entrez le nom du fichier XLS entier (incluant l\'extension du fichier): ')
         if not os.path.exists(filename):
             print("Choix invalide.")
             valid = 1
+        ros = input("Choisissez le type de filtrage :\nCarré : 1\nCirculaire : 2\nVotre choix :")
+        if ros == '1':
+            return filename, 0, int(ros)
+        elif ros == '2':
+            zone_size = input('Entrez le rayon de la zone que vous vous filtrer : ')
+            if zone_size <= '0':
+                print("Choix invalide.")
+                valid = 1
+        else:
+            print("Choix invalide")
+            valid = 1
         if valid == 1:
             continue
         else:
-            return filename
+            return filename, int(zone_size), int(ros)

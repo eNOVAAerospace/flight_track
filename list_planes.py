@@ -3,7 +3,7 @@ import row as row
 from library.PY_lib.coordinates import *
 from library.PY_lib.read_excel import *
 from library.PY_lib.calculate_distance import *
-from library.PY_lib.reading_file import read_csv
+# from library.PY_lib.reading_file import read_csv
 from library.PY_lib.user_define import *
 
 # filename = input('Entrez le nom du fichier CSV entier (incluant l\'extension du fichier): ')

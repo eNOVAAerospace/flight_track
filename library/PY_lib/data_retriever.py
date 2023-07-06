@@ -1,7 +1,7 @@
-from library.flight_scrapper import *
-from library.format_json import *
-from library.json_to_csv import *
-from library.json_to_excel import *
+from library.PY_lib.flight_scrapper import *
+from library.PY_lib.format_json import *
+from library.PY_lib.json_to_csv import *
+from library.PY_lib.json_to_excel import *
 from datetime import datetime
 from time import sleep
 

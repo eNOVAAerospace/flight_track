@@ -1,7 +1,6 @@
-from library.reading_file import *
-from library.coordinates import *
-from library.read_excel import *
-from library.calculate_distance import *
+from library.PY_lib.coordinates import *
+from library.PY_lib.read_excel import *
+from library.PY_lib.calculate_distance import *
 
 # filename = input('Entrez le nom du fichier CSV entier (incluant l\'extension du fichier): ')
 # coord_path = 'coordinates.txt'

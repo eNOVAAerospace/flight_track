@@ -1,3 +1,6 @@
+import os
+
+
 def get_user_choice():
     while True:
         print('Voulez-vous automatiser la récupération de données ?')
@@ -15,3 +18,16 @@ def get_user_choice():
             return int(see), int(nb_requests), int(time_request)
         else:
             print('Choix invalide. Veuillez entrer 0 ou 1.')
+
+
+def user_preferences():
+    valid = 0
+    while True:
+        filename = input('Entrez le nom du fichier XLS entier (incluant l\'extension du fichier): ')
+        if not os.path.exists(filename):
+            print("Choix invalide.")
+            valid = 1
+        if valid == 1:
+            continue
+        else:
+            return filename

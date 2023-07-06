@@ -1,6 +1,7 @@
 from library.PY_lib.coordinates import *
 from library.PY_lib.read_excel import *
 from library.PY_lib.calculate_distance import *
+from library.PY_lib.user_define import *
 
 # filename = input('Entrez le nom du fichier CSV entier (incluant l\'extension du fichier): ')
 # coord_path = 'coordinates.txt'
@@ -20,7 +21,7 @@ from library.PY_lib.calculate_distance import *
 #             print(f'plane number #{n}\tLat: {lat}\tLng: {lng}')
 # print(f'Tout a été enregistré dans le fichier : {new_filename}')
 
-filename = input('Entrez le nom du fichier XLS entier (incluant l\'extension du fichier): ')
+filename = user_preferences()
 coord_path = 'coordinates.txt'
 latitudes, longitudes = read_coordinates(coord_path)
 data = pd.read_excel(filename)

@@ -42,7 +42,7 @@ new_filename = 'sorted_' + filename + 'x'
 #
 # print(f'plane number #{n}\tLat: {latitudes}\tLng: {longitudes}')
 # print(f'Tout a été enregistré dans le fichier : {new_filename}')
-
+print(s_latitude, " - ", s_longitude)
 if choice == 1:
     for index, row in data.iterrows():
         lat = row['lat']
@@ -52,7 +52,6 @@ if choice == 1:
                 >= float(lng) >= float(s_longitude[1]):
             # n = n + 1
             filtered_data.append(row)
-            break
 
 if choice == 2:
     for index, row in data.iterrows():

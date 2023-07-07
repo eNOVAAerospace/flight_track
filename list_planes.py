@@ -3,8 +3,18 @@ import row as row
 from library.PY_lib.coordinates import *
 from library.PY_lib.read_excel import *
 from library.PY_lib.calculate_distance import *
-# from library.PY_lib.reading_file import read_csv
 from library.PY_lib.user_define import *
+# from library.PY_lib.reading_file import read_csv
+
+
+coord_path = 'coordinates.txt'
+filtered_data = []
+
+filename, taille_zone, choice = user_preferences()
+latitudes, longitudes = read_coordinates(coord_path)
+data = pd.read_excel(filename)
+data = pd.DataFrame(data)
+new_filename = 'sorted_' + filename + 'x'
 
 # filename = input('Entrez le nom du fichier CSV entier (incluant l\'extension du fichier): ')
 # coord_path = 'coordinates.txt'
@@ -29,15 +39,6 @@ from library.PY_lib.user_define import *
 #
 # print(f'plane number #{n}\tLat: {latitudes}\tLng: {longitudes}')
 # print(f'Tout a été enregistré dans le fichier : {new_filename}')
-
-coord_path = 'coordinates.txt'
-filtered_data = []
-
-filename, taille_zone, choice = user_preferences()
-latitudes, longitudes = read_coordinates(coord_path)
-data = pd.read_excel(filename)
-data = pd.DataFrame(data)
-new_filename = 'sorted_' + filename + 'x'
 
 # if choice == 1:
 #     for row in data:

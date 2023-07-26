@@ -8,7 +8,7 @@ it.
 We have two programs that aren't merged, so we will do use them separately.
 
 Bear in mind that this program isn't automated yet, so you will have to do it manually, and that the usage of this
-program is limite to 1000 use per month.
+program is limite to 1000 uses per month.
 
 > To install dependencies, you will have to click on the "install_all_packages.exe" file. It will install all the needed
 > dependencies for the program to work.
@@ -17,9 +17,9 @@ program is limite to 1000 use per month.
 
 ## How to : use the program 'Extract_Flight.exe'
 
-On the dump, you will see a file and a folder. For the current readme, the program is called "wrap_planes", it is the
-old file version, now named "Extract_Flight". the program is contained in the main.py file and the library in the
-folder, so don't delete or modify anything. you will have to keep this configuration so the program can work.
+On the dump, you will see a file and a folder. For the current readme, the program is called "wrap_planes.exe"; it is
+the old file version, now named "Extract_Flight.exe". The program is contained in the main.py file and the library in
+the folder, so don't delete or modify anything. You will have to keep this configuration so the program can work.
 
 ![img.png](library/readme/azertyhgcx.png)
 
@@ -33,37 +33,36 @@ process.
 
 ![img_1.png](library/readme/gvbnj,.png)
 
-Now, it asks to enter the number of requests you want to make. There is no maximum, but keep in mind the limits of the
+Now, it asks to enter the number of requests you want to make. There is no maximum, but keeps in mind the limits of the
 API. We will type "2" for now, asking then 2 data retrieval.
 
 ![img_2.png](library/readme/fvbj,l.png)
 
 Now, it asks to enter the number of seconds between each request. This is to avoid being blocked by the API. As you can
-see, it asks to provide the time in seconds, it is to be accurate in the time calculation between each request. We will
-type "10" for ten second. It will do 1 request each 10 seconds and permit us to see what it does.
+see, it asks to provide the time in seconds; it is to be accurate in the time calculation between each request. We will
+type "10" for ten seconds. It will do 1 request each 10 seconds and permit us to see what it does.
 
 ![img_3.png](library/readme/aqsxcvghjk.png)
 
 As you see, the data retrieval has started. It will take some time, depending on the number of requests you asked. It
 will close automatically once all the requests are done.
 
-This command applies itself in Windows, Linux, and Mac.
+This command applies itself on Windows, Linux, and Mac.
 
 ![img_4.png](library/readme/aqwxcvbn.png)
 
 
 Those are the new files. One of them is a JSON file and the other CSV, it won't interest us, so we can remove them if we
-want to. The file with the 'excel_' prefixe is the one that interest us and has the data with the correct format for
+want to. The file with the 'excel_' prefix is the one that interests us and has the data with the correct format for
 usage. Note that if you chose to make multiple requests, there will be multiple files, each one will have the exact time
 it was done.
 
 ------------
 
-## How to : use the program 'Filter_Flights.exe'
+## How to: use the program 'Filter_Flights.exe'
 
-On the dump, you will see a file named 'Filter_Flights.exe'. as for the previous program, the library/ folder mustn't be
+On the dump, you will see a file named "Filter_Flights.exe". As for the previous program, the library/ folder mustn't be
 touched, modified, or moved.
-
 
 ![img.png](library/readme/asvbn.png)
 
@@ -73,7 +72,7 @@ You will have to keep this configuration so the program can work. Now, we'll dou
 
 It will ask you to provide the file name that was created. Here, the name of our file is
 'excel_2023-07-26_10-15-45_flight.xls'. The naming is quite simple: 'excel' is meant for the XLS version of the file,
-the  numbers have the format YYYY-MM-DD_HH_MM_SS (Year, Month, Day, Hour, Minute, Second), and flight.
+the numbers have the format YYYY-MM-DD_HH_MM_SS (Year, Month, Day, Hour, Minute, Second), and flight.
 So actually our current file is: excel_2023-07-26_10-15-45_flight.xls
 
 Let's continue by entering the name of the file.
@@ -100,8 +99,8 @@ will go through it quickly.
 
 ![img_5.png](library/readme/rdfgvbn.png)
 
-The following format assumes 4 random points with one lat reference and one lng reference. If you want to change anything
-in this file, please respect the format already in place, for it to be fully functional. 
+The following format assumes 4 random points with one lat reference and one lng reference. If you want to change
+anything in this file, please respect the format already in place, for it to be fully functional. 
 
 ### How to: Circle sort
 

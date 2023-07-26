@@ -15,9 +15,10 @@ program is limite to 1000 use per month.
 
 -------------
 
-## How to : use the program 'wrap_planes.exe'
+## How to : use the program 'Extract_Flight.exe'
 
-On the dump, you will see a file and a folder. the program is contained in the main.py file and the library in the
+On the dump, you will see a file and a folder. For the current readme, the program is called "wrap_planes", it is the
+old file version, now named "Extract_Flight". the program is contained in the main.py file and the library in the
 folder, so don't delete or modify anything. you will have to keep this configuration so the program can work.
 
 ![img.png](library/readme/azertyhgcx.png)
@@ -58,39 +59,50 @@ it was done.
 
 ------------
 
-## How to : use the program 'list_planes.py'
+## How to : use the program 'Filter_Flights.exe'
 
-On the dump, you will see a file named 'list_planes.py'. as for the previous program, the library/ folder mustn't be
+On the dump, you will see a file named 'Filter_Flights.exe'. as for the previous program, the library/ folder mustn't be
 touched, modified, or moved.
 
 
-![img.png](library/readme/rfcvhytf.png)
+![img.png](img.png)
 
-You will have to keep this configuration so the program can work. Now, we'll take the exact same command prompt, and
-type in the following command:
-> **python list_planes.py**
-> 
-> ![img.png](library/readme/ascvbhg.png)
+You will have to keep this configuration so the program can work. Now, we'll double-click on the program to open it.
+
+![img_1.png](img_1.png)
 
 It will ask you to provide the file name that was created. Here, the name of our file is
-'tab_2023-06-09_17_02_48_flight.csv'. The naming is quite simple : 'tab' is meant for the CSV version of the file, the
-numbers have the format YYYY-MM-DD_HH_MM_SS (Year, Month, Day, Hour, Minute, Second), and flight.
-So actually our current file is : tab_2023-06-15_15-59-12_flight.csv
+'excel_2023-07-26_10-15-45_flight.xls'. The naming is quite simple: 'excel' is meant for the XLS version of the file,
+the  numbers have the format YYYY-MM-DD_HH_MM_SS (Year, Month, Day, Hour, Minute, Second), and flight.
+So actually our current file is: excel_2023-07-26_10-15-45_flight.xls
 
 Let's continue by entering the name of the file.
 After pressing enter, you will have the following display : 
 
-![img_1.png](library/readme/aqwxcvbn,.png)
+![img_2.png](img_2.png)
 
-on this display we see in the pormpt 'plane number #1 Lat: 49.98      Lng: 62.86'. This is subject to be removed in the
-long run, but it attests that data has been written. The data will be written in the filename with the 'sorted_' prefix.
-You will see it in your file explorer.
+It asks us what we want to do. We will do each one at a time to show how each one functions.
 
-![img.png](library/readme/ergx.png)
+### How to: Square sort
 
-For notice, the 'coordinates.txt' file is read by the program to filter the requested zone using 4 point, two lat and
-two lng point, as shown in the file:
+to sort in a square way, we will have to choose 1. Let's type 1 and see what it does.
 
-![img.png](library/readme/asdvbn.png)
+![img_3.png](img_3.png)
+
+It will sort it in a square way and create the following file: "square_sorted_excel_2023-07-26_10-15-45_flight.xlsx".
+The windows will automatically close itself, so you may not see what is written, but you will see your file in your file
+explorer:
+
+![img_4.png](img_4.png)
+
+If you want to edit the coordinate filter, you may open the "square_coordinates.txt" file shown one the screenshot, we
+will go through it quickly. 
+
+![img_5.png](img_5.png)
+
+The following format assume 4 random points with one lat reference and one lng reference. If you want to change anything
+in this file, please respect the format already in place, for it to be fully functional. 
+
+
 
 It is mandatory to keep the same format as it won't be functional otherwise.

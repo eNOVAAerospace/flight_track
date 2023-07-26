@@ -1,5 +1,3 @@
-import row as row
-
 from library.PY_lib.coordinates import *
 from library.PY_lib.read_excel import *
 from library.PY_lib.calculate_distance import *

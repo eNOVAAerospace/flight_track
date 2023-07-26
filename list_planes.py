@@ -19,13 +19,16 @@ new_filename = 'sorted_' + filename + 'x'
 
 if choice == 1:
     new_filename = 'square_' + new_filename
+    s_latitudes = s_latitude
+    s_longitudes = s_longitude
+    filtered_data = []
     for index, row in data.iterrows():
         lat = row['lat']
         lng = row['lng']
-        if float(s_latitude[0]) <= float(lat) <= float(s_latitude[1]) and float(s_longitude[0]) <= float(lng) <= float(
-                s_longitude[1]) or float(s_latitude[0]) >= float(lat) >= float(s_latitude[1]) and float(s_longitude[0])\
-                >= float(lng) >= float(s_longitude[1]):
-            # n = n + 1
+        if float(s_latitudes[0]) <= lat <= float(s_latitudes[1]) and float(s_longitudes[0]) <= lng <= float(s_longitudes[1]) or \
+           float(s_latitudes[1]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[1]) <= lng <= float(s_longitudes[2]) or \
+           float(s_latitudes[2]) <= lat <= float(s_latitudes[3]) and float(s_longitudes[2]) <= lng <= float(s_longitudes[3]) or \
+           float(s_latitudes[3]) <= lat <= float(s_latitudes[0]) and float(s_longitudes[3]) <= lng <= float(s_longitudes[0]):
             filtered_data.append(row)
 
 if choice == 2:

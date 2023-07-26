@@ -29,7 +29,7 @@ def user_preferences():
         if not os.path.exists(filename):
             print("Choix invalide.")
             valid = 1
-        ros = input("Choisissez le type de filtrage :\nCarré : 1\nCirculaire : 2\nVotre choix :")
+        ros = input("Choisissez le type de filtrage :\nQuadrilatère : 1\nCirculaire : 2\nVotre choix : ")
         if ros == '1':
             return filename, 0, int(ros)
         elif ros == '2':

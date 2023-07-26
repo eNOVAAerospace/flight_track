@@ -15,41 +15,41 @@ program is limite to 1000 uses per month.
 
 -------------
 
-## How to : use the program 'Extract_Flight.exe'
+## How to: use the program 'Extract_Flight.exe'
 
 On the dump, you will see a file and a folder. For the current readme, the program is called "wrap_planes.exe"; it is
 the old file version, now named "Extract_Flight.exe". The program is contained in the main.py file and the library in
 the folder, so don't delete or modify anything. You will have to keep this configuration so the program can work.
 
-![img.png](library/readme/azertyhgcx.png)
+![img.png](library/readme/file_explorer_1.png)
 
-Now we will click on the "wrap_planes.exe" file. It will open a command prompt.
+Now we will click on the "Extract_Flight.exe" file. It will open a command prompt.
 
-![img.png](library/readme/dcvbjhgv.png)
+![img.png](library/readme/Extract_Flight_1.png)
 
 As you can see, it will ask you to choose if you want to automate the process or not. If you choose to automate it, you
 will have to type "0" for yes, otherwise, type "1" for no. Let's choose "0" for now, we will follow up step by step the
 process.
 
-![img_1.png](library/readme/gvbnj,.png)
+![img_1.png](library/readme/Extract_Flight_2.png)
 
 Now, it asks to enter the number of requests you want to make. There is no maximum, but keeps in mind the limits of the
 API. We will type "2" for now, asking then 2 data retrieval.
 
-![img_2.png](library/readme/fvbj,l.png)
+![img_2.png](library/readme/Extract_Flight_3.png)
 
 Now, it asks to enter the number of seconds between each request. This is to avoid being blocked by the API. As you can
 see, it asks to provide the time in seconds; it is to be accurate in the time calculation between each request. We will
 type "10" for ten seconds. It will do 1 request each 10 seconds and permit us to see what it does.
 
-![img_3.png](library/readme/aqsxcvghjk.png)
+![img_3.png](library/readme/Extract_Flight_4.png)
 
 As you see, the data retrieval has started. It will take some time, depending on the number of requests you asked. It
 will close automatically once all the requests are done.
 
 This command applies itself on Windows, Linux, and Mac.
 
-![img_4.png](library/readme/aqwxcvbn.png)
+![img_4.png](library/readme/file_explorer_2.png)
 
 
 Those are the new files. One of them is a JSON file and the other CSV, it won't interest us, so we can remove them if we
@@ -64,11 +64,11 @@ it was done.
 On the dump, you will see a file named "Filter_Flights.exe". As for the previous program, the library/ folder mustn't be
 touched, modified, or moved.
 
-![img.png](library/readme/asvbn.png)
+![img.png](library/readme/file_explorer_3.png)
 
 You will have to keep this configuration so the program can work. Now, we'll double-click on the program to open it.
 
-![img_1.png](library/readme/aqsgyfcvb.png)
+![img_1.png](library/readme/Filter_Flights_1.png)
 
 It will ask you to provide the file name that was created. Here, the name of our file is
 'excel_2023-07-26_10-15-45_flight.xls'. The naming is quite simple: 'excel' is meant for the XLS version of the file,
@@ -78,7 +78,7 @@ So actually our current file is: excel_2023-07-26_10-15-45_flight.xls
 Let's continue by entering the name of the file.
 After pressing enter, you will have the following display : 
 
-![img_2.png](library/readme/edfgh.png)
+![img_2.png](library/readme/Filter_Flights_2.png)
 
 It asks us what we want to do. We will do each one at a time to show how each one functions.
 
@@ -86,18 +86,18 @@ It asks us what we want to do. We will do each one at a time to show how each on
 
 To sort in a square way, we will have to choose 1. Let's type 1 and see what it does.
 
-![img_3.png](library/readme/aqzsedfghn.png)
+![img_3.png](library/readme/Filter_Flights_Square_1.png)
 
 It will sort it in a square way and create the following file: "square_sorted_excel_2023-07-26_10-15-45_flight.xlsx".
 The windows will automatically close itself, so you may not see what is written, but you will see your file in your file
 explorer:
 
-![img_4.png](library/readme/aqszqscv.png)
+![img_4.png](library/readme/file_explorer_4.png)
 
 If you want to edit the coordinate filter, you may open the "square_coordinates.txt" file shown on the screenshot; we
 will go through it quickly. 
 
-![img_5.png](library/readme/rdfgvbn.png)
+![img_5.png](library/readme/suqare_coordinates_1.png)
 
 The following format assumes 4 random points with one lat reference and one lng reference. If you want to change
 anything in this file, please respect the format already in place, for it to be fully functional. 
@@ -106,23 +106,23 @@ anything in this file, please respect the format already in place, for it to be 
 
 To sort in a circle way, we will have to choose 2. Let's type 2 and see what it does.
 
-![img_6.png](library/readme/azq.png)
+![img_6.png](library/readme/Filter_Flights_Circle_1.png)
 
 It asks us the radius of the zone we want to cover. The radius is counted in kilometers, so if you type 100, it will be
 100-kilometer radius coverage. Let's type 100 and see what it does.
 
-![img_7.png](library/readme/poiuygf.png)
+![img_7.png](library/readme/Filter_Flights_Circle_2.png)
 
 It will sort it in a square way and create the following file: "round_sorted_excel_2023-07-26_10-15-45_flight.xlsx".
 The windows will automatically close itself, so you may not see what is written, but you will see your file in your file
 explorer:
 
-![img.png](library/readme/aqzsedcgfvgvgcgv.png)
+![img.png](library/readme/file_explorer_5.png)
 
 If you want to edit the coordinate filter, you may open the "round_coordinates.txt" file shown on the screenshot; we
 will go through it quickly. 
 
-![img.png](library/readme/aqsghj,nbvcxdfyjjhgf.png)
+![img.png](library/readme/round_coordinates_1.png)
 
 The following format assumes 1 lat reference and 1 lng reference. If you want to change anything
 in this file, please respect the format already in place, for it to be fully functional. 

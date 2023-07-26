@@ -95,7 +95,7 @@ explorer:
 
 ![img_4.png](library/readme/aqszqscv.png)
 
-If you want to edit the coordinate filter, you may open the "square_coordinates.txt" file shown one the screenshot, we
+If you want to edit the coordinate filter, you may open the "square_coordinates.txt" file shown on the screenshot; we
 will go through it quickly. 
 
 ![img_5.png](library/readme/rdfgvbn.png)
@@ -119,6 +119,14 @@ The windows will automatically close itself, so you may not see what is written,
 explorer:
 
 ![img.png](library/readme/aqzsedcgfvgvgcgv.png)
+
+If you want to edit the coordinate filter, you may open the "round_coordinates.txt" file shown on the screenshot; we
+will go through it quickly. 
+
+![img.png](library/readme/aqsghj,nbvcxdfyjjhgf.png)
+
+The following format assumes 1 lat reference and 1 lng reference. If you want to change anything
+in this file, please respect the format already in place, for it to be fully functional. 
 
 
 It is mandatory to keep the same format as it won't be functional otherwise.

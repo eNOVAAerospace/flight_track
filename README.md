@@ -65,11 +65,11 @@ On the dump, you will see a file named 'Filter_Flights.exe'. as for the previous
 touched, modified, or moved.
 
 
-![img.png](img.png)
+![img.png](library/readme/asvbn.png)
 
 You will have to keep this configuration so the program can work. Now, we'll double-click on the program to open it.
 
-![img_1.png](img_1.png)
+![img_1.png](library/readme/aqsgyfcvb.png)
 
 It will ask you to provide the file name that was created. Here, the name of our file is
 'excel_2023-07-26_10-15-45_flight.xls'. The naming is quite simple: 'excel' is meant for the XLS version of the file,
@@ -79,30 +79,46 @@ So actually our current file is: excel_2023-07-26_10-15-45_flight.xls
 Let's continue by entering the name of the file.
 After pressing enter, you will have the following display : 
 
-![img_2.png](img_2.png)
+![img_2.png](library/readme/edfgh.png)
 
 It asks us what we want to do. We will do each one at a time to show how each one functions.
 
 ### How to: Square sort
 
-to sort in a square way, we will have to choose 1. Let's type 1 and see what it does.
+To sort in a square way, we will have to choose 1. Let's type 1 and see what it does.
 
-![img_3.png](img_3.png)
+![img_3.png](library/readme/aqzsedfghn.png)
 
 It will sort it in a square way and create the following file: "square_sorted_excel_2023-07-26_10-15-45_flight.xlsx".
 The windows will automatically close itself, so you may not see what is written, but you will see your file in your file
 explorer:
 
-![img_4.png](img_4.png)
+![img_4.png](library/readme/aqszqscv.png)
 
 If you want to edit the coordinate filter, you may open the "square_coordinates.txt" file shown one the screenshot, we
 will go through it quickly. 
 
-![img_5.png](img_5.png)
+![img_5.png](library/readme/rdfgvbn.png)
 
-The following format assume 4 random points with one lat reference and one lng reference. If you want to change anything
+The following format assumes 4 random points with one lat reference and one lng reference. If you want to change anything
 in this file, please respect the format already in place, for it to be fully functional. 
 
+### How to: Circle sort
+
+To sort in a circle way, we will have to choose 2. Let's type 2 and see what it does.
+
+![img_6.png](library/readme/azq.png)
+
+It asks us the radius of the zone we want to cover. The radius is counted in kilometers, so if you type 100, it will be
+100-kilometer radius coverage. Let's type 100 and see what it does.
+
+![img_7.png](library/readme/poiuygf.png)
+
+It will sort it in a square way and create the following file: "round_sorted_excel_2023-07-26_10-15-45_flight.xlsx".
+The windows will automatically close itself, so you may not see what is written, but you will see your file in your file
+explorer:
+
+![img.png](library/readme/aqzsedcgfvgvgcgv.png)
 
 
 It is mandatory to keep the same format as it won't be functional otherwise.

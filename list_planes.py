@@ -42,12 +42,12 @@ filtered_df.to_excel(new_filename, index=False)
 
 print(f"Tout a été enregistré dans le fichier : {new_filename}")
 
-if (latitudes[0] <= lat <= latitudes[2]) and (longitudes[0] <= lng <= longitudes[2]):
-     if (lat <= (latitudes[1] - latitudes[0]) * (lng - longitudes[0]) / (longitudes[1] - longitudes[0]) + latitudes[0]):
-         is_inside = True
- if (latitudes[1] <= lat <= latitudes[3]) and (longitudes[1] >= lng >= longitudes[3]):
-     if (lat >= (latitudes[3] - latitudes[2]) * (lng - longitudes[2]) / (longitudes[3] - longitudes[2]) + latitudes[2]):
-         is_inside = True
+# if (latitudes[0] <= lat <= latitudes[2]) and (longitudes[0] <= lng <= longitudes[2]):
+#      if (lat <= (latitudes[1] - latitudes[0]) * (lng - longitudes[0]) / (longitudes[1] - longitudes[0]) + latitudes[0]):
+#          is_inside = True
+#  if (latitudes[1] <= lat <= latitudes[3]) and (longitudes[1] >= lng >= longitudes[3]):
+#      if (lat >= (latitudes[3] - latitudes[2]) * (lng - longitudes[2]) / (longitudes[3] - longitudes[2]) + latitudes[2]):
+#          is_inside = True
 
 
 # if float(s_latitudes[0]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[0]) <= lng <= float(s_longitudes[2]) or \

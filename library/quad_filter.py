@@ -25,15 +25,14 @@ def is_inside_quadrilateral(A, B, C, D, P):
     return intersections % 2 == 1
 
 
-def sort_elements():
-    A = (40, 50)
-    B = (60, 50)
-    C = (70, 49)
-    D = (30, 30)
-    P = (45.858307, 48.214973)
+def sort_elements(lat0, lat1, lat2, lat3, lat_P, lng0, lng1, lng2, lng3, lng_P):
+    A = (float(lat0), float(lng0))
+    B = (float(lat1), float(lng1))
+    C = (float(lat2), float(lng2))
+    D = (float(lat3), float(lng3))
+    P = (float(lat_P), float(lng_P))
     if is_inside_quadrilateral(A, B, C, D, P):
         print("Point P is inside the quadrilateral.")
         return 0
     else:
-        print("Point P is outside the quadrilateral.")
         return 1

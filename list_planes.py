@@ -2,6 +2,7 @@ from library.PY_lib.coordinates import *
 from library.PY_lib.read_excel import *
 from library.PY_lib.calculate_distance import *
 from library.PY_lib.user_define import *
+from library.quad_filter import *
 
 
 round_path = 'round_coordinates.txt'
@@ -17,13 +18,13 @@ new_filename = 'sorted_' + filename + 'x'
 
 if choice == 1:
     new_filename = 'square_' + new_filename
-    s_latitudes = s_latitude
-    s_longitudes = s_longitude
+    t_lat = s_latitude
+    t_lng = s_longitude
     filtered_data = []
     for index, row in data.iterrows():
         lat = row['lat']
         lng = row['lng']
-        if float(s_latitudes[0]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[0]) <= lng <= float(s_longitudes[2]) or float(s_latitudes[1]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[1]) <= lng <= float(s_longitudes[2]) or float(s_latitudes[2]) <= lat <= float(s_latitudes[3]) and float(s_longitudes[2]) <= lng <= float(s_longitudes[3]) or float(s_latitudes[3]) <= lat <= float(s_latitudes[0]) and float(s_longitudes[3]) <= lng <= float(s_longitudes[0]):
+        if sort_elements(t_lat[0], t_lat[1], t_lat[2], t_lat[3], lat, t_lng[0], t_lng[1], t_lng[2], t_lng[3], lng) == 0:
             filtered_data.append(row)
 
 if choice == 2:

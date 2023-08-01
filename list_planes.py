@@ -42,6 +42,3 @@ filtered_df = pd.DataFrame(filtered_data)
 filtered_df.to_excel(new_filename, index=False)
 
 print(f"Tout a été enregistré dans le fichier : {new_filename}")
-
-
-# float(s_latitudes[0]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[0]) <= lng <= float(s_longitudes[2]) or float(s_latitudes[1]) <= lat <= float(s_latitudes[2]) and float(s_longitudes[1]) <= lng <= float(s_longitudes[2]) or float(s_latitudes[2]) <= lat <= float(s_latitudes[3]) and float(s_longitudes[2]) <= lng <= float(s_longitudes[3]) or float(s_latitudes[3]) <= lat <= float(s_latitudes[0]) and float(s_longitudes[3]) <= lng <= float(s_longitudes[0]):

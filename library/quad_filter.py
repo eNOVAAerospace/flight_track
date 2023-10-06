@@ -32,7 +32,7 @@ def sort_elements(lat0, lat1, lat2, lat3, lat_P, lng0, lng1, lng2, lng3, lng_P):
     D = (float(lat3), float(lng3))
     P = (float(lat_P), float(lng_P))
     if is_inside_quadrilateral(A, B, C, D, P):
-        print("Point P is inside the quadrilateral.")
+        # print("Point P is inside the quadrilateral.")
         return 0
     else:
         return 1

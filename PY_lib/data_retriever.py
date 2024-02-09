@@ -129,31 +129,32 @@ def get_data(n, request_left, attente):
         get_data(n, request_left, attente)
 
 
-def onefiledata(filename, taille_zone, choice, r_latitudes, r_longitude, s_latitude, s_longitude):
-    # print(filename)
-    data = pd.read_excel(filename)
-    data = pd.DataFrame(data)
+# def onefiledata(filename, taille_zone, choice, r_latitudes, r_longitude, s_latitude, s_longitude):
+#   Old function, not used anymore
+#     # print(filename)
+#     data = pd.read_excel(filename)
+#     data = pd.DataFrame(data)
 
-    if choice == 1:
-        t_lat = s_latitude
-        t_lng = s_longitude
-        # filtered_data = []
-        for index, row in data.iterrows():
-            lat = row['lat']
-            lng = row['lng']
-            if sort_elements(t_lat[0], t_lat[1], t_lat[2], t_lat[3], lat, t_lng[0], t_lng[1], t_lng[2], t_lng[3], lng) == 0:
-                data.loc[index,'distance'] = True
-        filtered_data=data.where(data['distance']==True)
+#     if choice == 1:
+#         t_lat = s_latitude
+#         t_lng = s_longitude
+#         # filtered_data = []
+#         for index, row in data.iterrows():
+#             lat = row['lat']
+#             lng = row['lng']
+#             if sort_elements(t_lat[0], t_lat[1], t_lat[2], t_lat[3], lat, t_lng[0], t_lng[1], t_lng[2], t_lng[3], lng) == 0:
+#                 data.loc[index,'distance'] = True
+#         filtered_data=data.where(data['distance']==True)
 
-    if choice == 2:
-        for index, row in data.iterrows():
-            lat = row['lat']
-            lng = row['lng']
-            for ref_lat, ref_lng in zip(r_latitudes, r_longitude):
-                data.loc[index,'distance'] = calculate_distance(lat, lng, float(ref_lat), float(ref_lng))
-        filtered_data=data.where(data['distance']<=taille_zone)
-    # display(filtered_data.dropna())
-    return filtered_data.dropna()
+#     if choice == 2:
+#         for index, row in data.iterrows():
+#             lat = row['lat']
+#             lng = row['lng']
+#             for ref_lat, ref_lng in zip(r_latitudes, r_longitude):
+#                 data.loc[index,'distance'] = calculate_distance(lat, lng, float(ref_lat), float(ref_lng))
+#         filtered_data=data.where(data['distance']<=taille_zone)
+#     # display(filtered_data.dropna())
+#     return filtered_data.dropna()
 
 def format_json(file_in, file_out):
     with open(file_in, 'r') as f_in:

@@ -99,7 +99,7 @@ def get_data(n, request_left, attente):
     """
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     
-    file_name = f'{current_time}'
+    file_name = f'{current_time}_flight'
     json_file = f'{os.path.join("Data","tempo.json")}'
     # csv_file = f'tab_{namefile}.csv'
     excel_file = f'{os.path.join("Data", "API_extract",file_name)}.xlsx'
@@ -118,7 +118,7 @@ def get_data(n, request_left, attente):
     df['Date']=current_time
     df.to_excel(excel_file, index=False)
 
-    os.remove(json_file)
+    # os.remove(json_file)
 
     print(f'{file_name} has been saved to {os.path.join("Data", "API_extract")}')
 
